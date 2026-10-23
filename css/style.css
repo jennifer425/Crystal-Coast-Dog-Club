@@ -1,14 +1,17 @@
-/* Crystal Coast Dog Club — shared styles
-   Palette from scraps/colorguide.txt in the source design project */
+/* Crystal Coast Dog Club | shared styles
+   Palette: Cultivating Culver brand suite (2026). See the CCDC Color Palette Guide. */
 
 :root{
-  --navy: #16333F;      /* ocean navy */
-  --blue: #3E7CA6;      /* coastal blue */
-  --sky: #A9D3E3;       /* sky blue */
-  --sand: #E5D6BC;      /* warm sand */
-  --cream: #FAF7F1;     /* sea salt cream */
-  --body-text: #374B54;
-  --muted-text: #7C93A0;
+  --navy: #2A3F56;          /* Navy: loyalty and commitment */
+  --cream: #F1ECE1;         /* Seashell cream: warmth and inclusivity */
+  --coastal-blue: #B0C7D8;  /* Coastal blue: peace and trust */
+  --dark-ocean: #749DBD;    /* Dark ocean */
+  --teal: #367982;          /* Ocean teal: compassion and growth */
+  --sunshine: #E4B867;      /* Sunshine orange: joy and optimism */
+  --coral: #DD9C6F;         /* Coastal coral: love and connection */
+  --taupe: #A89379;         /* Sandy taupe: stability and belonging */
+  --charcoal: #2E2E2E;      /* Charcoal: strength and timelessness */
+  --body-text: var(--charcoal);
   --font-display: 'Bricolage Grotesque', sans-serif;
   --font-body: 'Public Sans', sans-serif;
 }
@@ -22,7 +25,7 @@ body{
   color: var(--body-text);
 }
 
-a{ color: var(--blue); text-decoration: none; }
+a{ color: var(--teal); text-decoration: none; }
 a:hover{ color: var(--navy); }
 
 img{ max-width: 100%; display: block; }
@@ -60,9 +63,10 @@ h1, h2, h3{ font-family: var(--font-display); margin: 0; }
   width: fit-content;
   white-space: nowrap;
 }
-.btn-sand{ background: var(--sand); color: var(--navy); }
+.btn-accent{ background: var(--sunshine); color: var(--navy); }
 .btn-navy{ background: var(--navy); color: var(--cream); }
-.btn-outline{ background: transparent; color: var(--cream); border: 1.5px solid var(--sky); }
+.btn-outline{ background: transparent; color: var(--cream); border: 1.5px solid var(--dark-ocean); }
+.btn-outline:hover{ color: var(--cream); border-color: var(--cream); }
 .btn-sm{ padding: 11px 22px; font-size: 14px; }
 
 .pill{
@@ -78,21 +82,21 @@ h1, h2, h3{ font-family: var(--font-display); margin: 0; }
   display: flex;
   align-items: center;
   justify-content: center;
-  background: repeating-linear-gradient(135deg, var(--sky), var(--sky) 14px, #93c3d9 14px, #93c3d9 28px);
+  background: repeating-linear-gradient(135deg, var(--coastal-blue), var(--coastal-blue) 14px, var(--dark-ocean) 14px, var(--dark-ocean) 28px);
   min-height: 260px;
 }
 .photo-placeholder span{
   font-family: ui-monospace, monospace;
   font-size: 12px;
   color: var(--navy);
-  background: rgba(250,247,241,0.75);
+  background: rgba(241,236,225,0.75);
   padding: 6px 12px;
   border-radius: 6px;
   text-align: center;
 }
-.photo-placeholder.tone-sand{ background: repeating-linear-gradient(135deg, var(--sand), var(--sand) 14px, #d9c5a3 14px, #d9c5a3 28px); }
-.photo-placeholder.tone-blue{ background: repeating-linear-gradient(135deg, var(--blue), var(--blue) 14px, #2f6389 14px, #2f6389 28px); }
-.photo-placeholder.tone-blue span{ color: var(--cream); background: rgba(22,51,63,0.55); }
+.photo-placeholder.tone-warm{ background: repeating-linear-gradient(135deg, var(--sunshine), var(--sunshine) 14px, var(--coral) 14px, var(--coral) 28px); }
+.photo-placeholder.tone-teal{ background: repeating-linear-gradient(135deg, var(--teal), var(--teal) 14px, var(--navy) 14px, var(--navy) 28px); }
+.photo-placeholder.tone-teal span{ color: var(--cream); background: rgba(42,63,86,0.55); }
 .photo-placeholder.hero{ min-height: 420px; }
 
 /* ---------- header ---------- */
@@ -120,10 +124,10 @@ h1, h2, h3{ font-family: var(--font-display); margin: 0; }
 .nav a, .nav .current{
   font-size: 14px;
   font-weight: 500;
-  color: var(--blue);
+  color: var(--navy);
   white-space: nowrap;
 }
-.nav .current{ font-weight: 600; color: var(--navy); }
+.nav .current{ font-weight: 600; color: var(--teal); }
 .nav a.btn-navy{ color: var(--cream); }
 .nav a.btn-navy:hover{ color: var(--cream); opacity: 0.9; }
 
@@ -131,7 +135,7 @@ h1, h2, h3{ font-family: var(--font-display); margin: 0; }
 .nav-dropdown-toggle{
   font-size: 14px;
   font-weight: 500;
-  color: var(--blue);
+  color: var(--navy);
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -141,7 +145,7 @@ h1, h2, h3{ font-family: var(--font-display); margin: 0; }
   font-family: var(--font-body);
   padding: 0;
 }
-.nav-dropdown.is-current .nav-dropdown-toggle{ font-weight: 600; color: var(--navy); }
+.nav-dropdown.is-current .nav-dropdown-toggle{ font-weight: 600; color: var(--teal); }
 .nav-dropdown-menu{
   display: none;
   position: absolute;
@@ -156,7 +160,7 @@ h1, h2, h3{ font-family: var(--font-display); margin: 0; }
 .nav-dropdown-menu-inner{
   background: #FFFFFF;
   border-radius: 12px;
-  box-shadow: 0 14px 34px rgba(22,51,63,0.18);
+  box-shadow: 0 14px 34px rgba(42,63,86,0.18);
   padding: 8px;
   display: flex;
   flex-direction: column;
@@ -169,7 +173,7 @@ h1, h2, h3{ font-family: var(--font-display); margin: 0; }
   color: var(--navy);
   white-space: nowrap;
 }
-.nav-dropdown-menu-inner a:hover{ background: #FAF3E7; color: var(--navy); }
+.nav-dropdown-menu-inner a:hover{ background: var(--cream); color: var(--teal); }
 
 @media (min-width: 861px){
   .nav-dropdown:hover .nav-dropdown-menu{ display: flex; }
@@ -204,17 +208,18 @@ h1, h2, h3{ font-family: var(--font-display); margin: 0; }
 .footer-cta{ display: flex; flex-direction: column; gap: 22px; max-width: 460px; }
 .footer-cta h2{ font-size: 44px; color: var(--cream); }
 .footer-links{ display: flex; gap: 64px; flex-wrap: wrap; }
-.footer-col{ display: flex; flex-direction: column; gap: 10px; font-size: 14px; color: var(--sky); }
+.footer-col{ display: flex; flex-direction: column; gap: 10px; font-size: 14px; color: var(--coastal-blue); }
 .footer-col-title{ font-weight: 600; color: var(--cream); }
-.footer-col a{ color: var(--sky); }
+.footer-col a{ color: var(--coastal-blue); }
+.footer-col a:hover, .footer-bottom a:hover{ color: var(--cream); }
 .footer-bottom{
-  border-top: 1px solid rgba(250,247,241,0.15);
+  border-top: 1px solid rgba(241,236,225,0.15);
   padding-top: 22px;
   display: flex;
   flex-direction: column;
   gap: 10px;
   font-size: 12.5px;
-  color: var(--muted-text);
+  color: var(--coastal-blue);
 }
 .footer-bottom-row{
   display: flex;
@@ -222,14 +227,14 @@ h1, h2, h3{ font-family: var(--font-display); margin: 0; }
   flex-wrap: wrap;
   gap: 8px;
 }
-.footer-bottom a{ color: var(--sky); }
+.footer-bottom a{ color: var(--coastal-blue); }
 
 /* ---------- forms ---------- */
 
 .form-field{
   padding: 16px 18px;
   border-radius: 100px;
-  border: 1px solid rgba(22,51,63,0.2);
+  border: 1px solid rgba(42,63,86,0.2);
   font-size: 15px;
   color: var(--navy);
   background: #fff;
@@ -241,8 +246,7 @@ h1, h2, h3{ font-family: var(--font-display); margin: 0; }
   display: flex;
   flex-direction: column;
   gap: 16px;
-  background: rgba(250,247,241,0.1);
-  border: 1px solid rgba(250,247,241,0.25);
+  background: var(--cream);
   border-radius: 18px;
   padding: 36px;
   width: 100%;
@@ -252,14 +256,14 @@ h1, h2, h3{ font-family: var(--font-display); margin: 0; }
 .contact-form label{
   font-size: 13px;
   font-weight: 600;
-  color: var(--sky);
+  color: var(--navy);
 }
 .contact-form input, .contact-form textarea{
   padding: 12px 14px;
   border-radius: 8px;
-  border: 1px solid rgba(250,247,241,0.3);
-  background: rgba(250,247,241,0.08);
-  color: var(--cream);
+  border: 1px solid rgba(42,63,86,0.2);
+  background: #FFFFFF;
+  color: var(--charcoal);
   font-size: 15px;
   font-family: var(--font-body);
   resize: none;
@@ -289,7 +293,7 @@ h1, h2, h3{ font-family: var(--font-display); margin: 0; }
     align-items: flex-start;
     gap: 4px;
     padding: 16px 24px 24px;
-    box-shadow: 0 14px 34px rgba(22,51,63,0.14);
+    box-shadow: 0 14px 34px rgba(42,63,86,0.14);
   }
   .nav.is-open{ display: flex; }
   .nav a, .nav .current, .nav-dropdown-toggle{ padding: 10px 0; width: 100%; }
@@ -302,7 +306,7 @@ h1, h2, h3{ font-family: var(--font-display); margin: 0; }
     width: 100%;
   }
   .nav-dropdown-menu.is-open{ display: flex; }
-  .nav-dropdown-menu-inner{ box-shadow: none; background: rgba(22,51,63,0.04); }
+  .nav-dropdown-menu-inner{ box-shadow: none; background: rgba(42,63,86,0.04); }
   .nav .btn{ margin-top: 8px; }
 
   .nav-toggle{ display: flex; }
