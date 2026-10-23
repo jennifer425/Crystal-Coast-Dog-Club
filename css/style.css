@@ -160,6 +160,7 @@ h1, h2, h3{ font-family: var(--font-display); margin: 0; }
 .nav-dropdown-menu-inner{
   background: #FFFFFF;
   border-radius: 12px;
+  border: 1px solid var(--taupe);
   box-shadow: 0 14px 34px rgba(42,63,86,0.18);
   padding: 8px;
   display: flex;
@@ -213,7 +214,7 @@ h1, h2, h3{ font-family: var(--font-display); margin: 0; }
 .footer-col a{ color: var(--coastal-blue); }
 .footer-col a:hover, .footer-bottom a:hover{ color: var(--cream); }
 .footer-bottom{
-  border-top: 1px solid rgba(241,236,225,0.15);
+  border-top: 1px solid var(--taupe);
   padding-top: 22px;
   display: flex;
   flex-direction: column;
@@ -234,7 +235,7 @@ h1, h2, h3{ font-family: var(--font-display); margin: 0; }
 .form-field{
   padding: 16px 18px;
   border-radius: 100px;
-  border: 1px solid rgba(42,63,86,0.2);
+  border: 1px solid var(--taupe);
   font-size: 15px;
   color: var(--navy);
   background: #fff;
@@ -261,7 +262,7 @@ h1, h2, h3{ font-family: var(--font-display); margin: 0; }
 .contact-form input, .contact-form textarea{
   padding: 12px 14px;
   border-radius: 8px;
-  border: 1px solid rgba(42,63,86,0.2);
+  border: 1px solid var(--taupe);
   background: #FFFFFF;
   color: var(--charcoal);
   font-size: 15px;
