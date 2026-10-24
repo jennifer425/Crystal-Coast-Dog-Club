@@ -105,7 +105,7 @@ h1, h2, h3{ font-family: var(--font-display); margin: 0; }
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 14px 40px;
+  padding: 18px 40px;
   background: var(--cream);
   position: relative;
   z-index: 100;
@@ -326,6 +326,9 @@ h1, h2, h3{ font-family: var(--font-display); margin: 0; }
 .name-link{ color: inherit; }
 .name-link:hover{ color: var(--teal); text-decoration: underline; }
 
-/* ---------- header logo (temporary lighthouse lockup) ---------- */
-.logo-img{ height: 112px; width: auto; display: block; }
-@media (max-width: 860px){ .logo-img{ height: 76px; } }
+/* ---------- logos ---------- */
+.logo-img{ height: 54px; width: auto; display: block; }
+@media (max-width: 860px){ .logo-img{ height: 42px; } }
+.footer-badge{ width: 120px; height: auto; }
+@media (max-width: 860px){ .footer-badge{ width: 96px; } }
+.footer-cta{ margin-right: auto; }
