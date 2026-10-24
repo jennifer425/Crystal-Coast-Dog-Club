@@ -321,3 +321,7 @@ h1, h2, h3{ font-family: var(--font-display); margin: 0; }
   h1{ font-size: 38px !important; }
   .footer-cta h2, .cta-heading{ font-size: 32px !important; }
 }
+
+/* ---------- linked names ---------- */
+.name-link{ color: inherit; }
+.name-link:hover{ color: var(--teal); text-decoration: underline; }
