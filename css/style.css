@@ -1,6 +1,13 @@
 /* Crystal Coast Dog Club | shared styles
    Palette: Cultivating Culver brand suite (2026). See the CCDC Color Palette Guide. */
 
+/* ---------- brand fonts (Cultivating Culver brand suite) ---------- */
+@font-face{ font-family:'Summerhouse Sans'; src:url('../fonts/summerhouse-sans.woff2') format('woff2'); font-weight:100 900; font-style:normal; font-display:swap; }
+@font-face{ font-family:'Summerhouse Serif'; src:url('../fonts/summerhouse-serif.woff2') format('woff2'); font-weight:400; font-style:normal; font-display:swap; }
+@font-face{ font-family:'Summerhouse Serif'; src:url('../fonts/summerhouse-serif-bold.woff2') format('woff2'); font-weight:600 700; font-style:normal; font-display:swap; }
+@font-face{ font-family:'Summerhouse Script'; src:url('../fonts/summerhouse-script.woff2') format('woff2'); font-weight:400; font-style:normal; font-display:swap; }
+@font-face{ font-family:'Summerhouse Script'; src:url('../fonts/summerhouse-script-bold.woff2') format('woff2'); font-weight:700; font-style:normal; font-display:swap; }
+
 :root{
   --navy: #2A3F56;          /* Navy: loyalty and commitment */
   --cream: #F1ECE1;         /* Seashell cream: warmth and inclusivity */
@@ -12,8 +19,9 @@
   --taupe: #A89379;         /* Sandy taupe: stability and belonging */
   --charcoal: #2E2E2E;      /* Charcoal: strength and timelessness */
   --body-text: var(--charcoal);
-  --font-display: 'Bricolage Grotesque', sans-serif;
-  --font-body: 'Public Sans', sans-serif;
+  --font-display: 'Summerhouse Sans', 'Helvetica Neue', Arial, sans-serif;
+  --font-body: 'Summerhouse Serif', Georgia, serif;
+  --font-script: 'Summerhouse Script', cursive;
 }
 
 *{ box-sizing: border-box; }
